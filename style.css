@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte01:Verdana, Geneva, Tahoma, sans-serif;
+    --fonte02: 'Passion One', cursive;
+    --fonte03: 'Sriracha', cursive;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+html, body{
+    min-height: 100vh;
+    font-family: var(--fonte01);
+}
+header{
+    margin-bottom: 30px;
+    padding: 40px;
+    background-color: black;
+    color: white;
+    font-family: var(--fonte02);
+}
+header h1{
+    text-align: center;
+    font-size: 10vw;
+    font-weight: bolder;
+    padding-top: 50px;
+    font-variant: small-caps;
+    
+}
+header p{
+    text-align: center;
+    margin: 15px;
+    font-size: 1.1em;
+}
+header a, footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+article{
+    padding-top: 10vh;
+    padding-bottom:10vh ;
+    
+    margin-bottom: 30px;
+}
+article p{
+    margin-left: 20px;
+    line-height: 3em;
+    font-family: var(--fonte03);
+    font-size: 2.4vw;
+}
+.normal{
+    color: black;
+}
+.imagem{
+    background-color: rgb(65, 61, 61);
+    box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.527);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.imagem > p{
+    width: 400px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.336);
+    color: white;
+    text-shadow: 2px 3px 0px black;
+    
+}
+article#img01{
+    background-image: url("imagens/background001.jpg");
+    background-position: right center;
+    
+}
+article#img02{
+    background-image: url("imagens/background002.jpg");
+}
+
+/* #imagem1{
+    height: 100vh;
+    background: black url("imagens/background001.jpg") center center/cover no-repeat;
+    color: white;
+    margin-bottom: 30px;
+    box-shadow: 2px 3px 7px black;
+}
+#imagem1 p{
+    padding-top: 30px;
+    background-color: rgba(0, 0, 0, 0.473);
+}
+
+#imagem2{
+    height: 100vh;
+    background: black url("imagens/background002.jpg") center center/cover no-repeat;
+    background-color: rgba(0, 0, 0, 0.473);
+    
+    color: white;
+    margin-bottom: 30px;
+}
+#imagem2{
+    padding-top: 30px;
+} */
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+footer p{
+    text-align: center;
+}
